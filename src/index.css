@@ -1,0 +1,162 @@
+/* importar fonts de google */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap');
+
+*{
+box-sizing: border-box;
+scrollbar-color: #d9d7d7;
+scrollbar-width: none;  /* Firefox */
+} 
+::-webkit-scrollbar{
+width: 0;
+} 
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px #d9d7d7; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background:  #d9d7d7; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #a6a4a4; 
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+.app {
+margin: auto;
+}
+
+.navbar {
+z-index: 5 !important;
+}
+
+/* related items */
+.wrapper {
+display: flex;
+overflow-x: auto;
+scrollbar-width: thin;  /* Firefox */
+
+}
+
+.wrapper::-webkit-scrollbar{
+width: 10px;
+} 
+
+.wrapper .item {  
+margin-right: 20px;
+}
+
+/* Button Styles */
+
+.button {
+  display: flex;
+  min-width: 150px;
+  padding: 10px 40px;
+  height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+a {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Seventh Button */
+
+.button-7 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+  .button-7.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+.button-7 a {
+  position: relative;
+  left: 0;
+  transition: all .35s ease-Out;
+}
+
+.item .button-7 {
+  right: 0 !important;
+}
+
+.preliminar {
+  border-radius: 0;
+  min-width: 150px !important;
+  padding: 10px 40px !important;
+  width: 100% !important;
+}
+
+.dub-arrow {
+  width: 100% !important;
+  height: 100% !important;
+  left: -500px !important;
+  position: absolute !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+.addedCart {
+  width: 100% !important;
+  height: 100% !important;
+  left: -500px !important;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+
+
+.item .button,.item .preliminar, .item .button-7 .dub-arrow,.item .button-7 .addedCart {
+  padding: 10px !important;
+  max-width: 100px !important;
+  min-width: none !important;
+}
+
+
+.button-7:hover .dub-arrow {
+  left: 0 !important;
+}
+
+.button-7:focus .addedCart{
+  left: 0 !important;
+}
+
+.button-7:hover a {
+  left: 150px !important;
+}
+
+.button-7:focus a {
+  left: 150px;
+}
+
