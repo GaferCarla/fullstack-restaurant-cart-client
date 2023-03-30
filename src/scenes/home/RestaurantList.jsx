@@ -31,7 +31,7 @@ const RestaurantList = () => {
 
 
   useEffect(() => {
-    axios.get("http://localhost:1337/api/restaurants?populate=*").then((res) => {
+    axios.get("https://king-prawn-app-s9lqd.ondigitalocean.app/api/restaurants?populate=*").then((res) => {
       
       dispatch(setRestaurants(res.data));
     });

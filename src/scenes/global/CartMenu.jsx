@@ -106,7 +106,7 @@ const CartMenu = () => {
                       width="100px"
                       height="100px"
                       onClick={() =>  dispatch(setIsCartOpen({})) && navigate(`/item/${item.id}`)}
-                      src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.thumbnail?.url}`}
+                      src={`https://king-prawn-app-s9lqd.ondigitalocean.app${item?.attributes?.image?.data?.attributes?.formats?.thumbnail?.url}`}
                     />
                   </Col>
                   <Col className="col-8">

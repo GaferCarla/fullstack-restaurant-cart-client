@@ -50,7 +50,7 @@ const Restaurant = ({ restaurant, width }) => {
             alt={restaurant.nameRestaurant}
             width="220px"
             height="220px"
-            src={`http://localhost:1337${url}`}
+            src={`https://king-prawn-app-s9lqd.ondigitalocean.app${url}`}
             onClick={() => navigate(`/restaurant/${restaurant.id}`)}
             style={{
               cursor: "pointer",

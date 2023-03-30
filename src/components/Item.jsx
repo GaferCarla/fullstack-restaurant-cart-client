@@ -101,7 +101,7 @@ const Item = ({ item, width }) => {
             alt={item.name}
             width="220px"
             height="220px"
-            src={`http://localhost:1337${url}`}
+            src={`https://king-prawn-app-s9lqd.ondigitalocean.app${url}`}
             onClick={() => navigate(`/item/${item.id}`)}
             style={{
               cursor: "pointer",

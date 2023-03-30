@@ -29,7 +29,7 @@ const Profile = () => {
 
     //GET THE INFORMATION IN STRAPI
   
-    const apiUrl = "http://localhost:1337/api/orders?populate=*";
+    const apiUrl = "https://king-prawn-app-s9lqd.ondigitalocean.app/api/orders?populate=*";
   
   
     useEffect(() => {

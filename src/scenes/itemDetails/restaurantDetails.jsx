@@ -52,7 +52,7 @@ const RestaurantDetails = () => {
   //sync single item in the same endpoint
   async function getItem() {
     const item = await fetch(
-      `http://localhost:1337/api/restaurants/${restaurantId}?populate=*`,
+      `https://king-prawn-app-s9lqd.ondigitalocean.app/api/restaurants/${restaurantId}?populate=*`,
       {
         method: "GET",
       }
@@ -67,7 +67,7 @@ const RestaurantDetails = () => {
   //Firts import the items in the shopping list
   async function getItems() {
     const items = await fetch(
-      `http://localhost:1337/api/items?populate=*`,
+      `https://king-prawn-app-s9lqd.ondigitalocean.app/api/items?populate=*`,
       {
         method: "GET",
       }
@@ -105,7 +105,7 @@ const RestaurantDetails = () => {
               alt={item?.name}
               width="100%"
               height="100%"
-              src={`http://localhost:1337${item?.attributes?.logo?.data?.attributes?.formats?.thumbnail?.url}`}
+              src={`https://king-prawn-app-s9lqd.ondigitalocean.app${item?.attributes?.logo?.data?.attributes?.formats?.thumbnail?.url}`}
               style={{ objectFit: "contain"}}
             />
           </Box>

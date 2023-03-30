@@ -64,7 +64,7 @@ const ItemDetails = () => {
   //sync single item in the same endpoint
   async function getItem() {
     const item = await fetch(
-      `http://localhost:1337/api/items/${itemId}?populate=*`,
+      `https://king-prawn-app-s9lqd.ondigitalocean.app/api/items/${itemId}?populate=*`,
       {
         method: "GET",
       }
@@ -78,7 +78,7 @@ const ItemDetails = () => {
   //Firts import the items in the shopping list
   async function getItems() {
     const items = await fetch(
-      `http://localhost:1337/api/items?populate=*`,
+      `https://king-prawn-app-s9lqd.ondigitalocean.app/api/items?populate=*`,
       {
         method: "GET",
       }
@@ -131,7 +131,7 @@ const filterbyIdRestaurant = items.filter(
               alt={item?.name}
               width="100%"
               height="100%"
-              src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.thumbnail?.url}`}
+              src={`https://king-prawn-app-s9lqd.ondigitalocean.app${item?.attributes?.image?.data?.attributes?.formats?.thumbnail?.url}`}
               style={{ objectFit: "contain"}}
             />
           </Box>
@@ -187,7 +187,7 @@ const filterbyIdRestaurant = items.filter(
                     margin:"10px 0 0"                 
                   }}
                   onClick={() => navigate(`../../restaurant/${item?.attributes?.restaurant?.data?.id}`)}
-                  src={`http://localhost:1337${item?.attributes?.logo?.data?.attributes?.formats?.thumbnail?.url}`}
+                  src={`https://king-prawn-app-s9lqd.ondigitalocean.app${item?.attributes?.logo?.data?.attributes?.formats?.thumbnail?.url}`}
                   
                 />
 

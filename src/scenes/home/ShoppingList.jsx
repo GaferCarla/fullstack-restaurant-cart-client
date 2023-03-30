@@ -19,7 +19,7 @@ const ShoppingList = () => {
   
   async function getItems() {
     const items = await fetch(
-      "http://localhost:1337/api/items?populate=*",
+      "https://king-prawn-app-s9lqd.ondigitalocean.app/api/items?populate=*",
       { method: "GET" }
     );
     const itemsJson = await items.json();

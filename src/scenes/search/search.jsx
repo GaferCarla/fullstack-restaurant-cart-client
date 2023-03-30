@@ -20,7 +20,7 @@ const Search = () => {
 
   //GET THE INFORMATION IN STRAPI
 
-  const apiUrl = "http://localhost:1337/api/restaurants?populate=*";
+  const apiUrl = "https://king-prawn-app-s9lqd.ondigitalocean.app/api/restaurants?populate=*";
 
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const Search = () => {
                 maxHeight: "40px",
                 margin: "auto",
               }}
-              src={`http://localhost:1337${restaurant?.attributes?.logo?.data?.attributes?.formats?.thumbnail?.url}`}
+              src={`https://king-prawn-app-s9lqd.ondigitalocean.app${restaurant?.attributes?.logo?.data?.attributes?.formats?.thumbnail?.url}`}
             />
           </td>
           <td style={{ verticalAlign: "middle" }}>
@@ -88,7 +88,7 @@ const Search = () => {
                 maxHeight: "40px",
                 margin: "auto",
               }}
-              src={`http://localhost:1337${restaurant?.attributes?.logo?.data?.attributes?.formats?.thumbnail?.url}`}
+              src={`https://king-prawn-app-s9lqd.ondigitalocean.app${restaurant?.attributes?.logo?.data?.attributes?.formats?.thumbnail?.url}`}
             />
           </td>
           <td style={{ verticalAlign: "middle" }}>
